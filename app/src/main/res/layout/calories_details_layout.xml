@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="UserCaloriesInfo"
+            type="com.example.fit.model.UserDetails_Entry" />
+    </data>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="5dp"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/CaloriesDetailsCard"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/need1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/you_need"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp" />
+
+
+                <TextView
+                    android:id="@+id/maintain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/need1"
+                    tools:text="1,774 "
+                    android:text='@{String.valueOf(UserCaloriesInfo.mainCalories)}'
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/maintain"
+                    android:layout_centerVertical="true"
+                    android:text="@string/calories_day_to_maintain_your_weight"
+                    android:padding="5dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/need2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/you_need"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp" />
+
+
+                <TextView
+                    android:id="@+id/toLose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/need2"
+                    tools:text="1,774"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text='@{String.valueOf(UserCaloriesInfo.toBurnHalf)}'
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/toLose"
+                    android:layout_centerVertical="true"
+                    android:text="@string/calories_day_to_lose_0_5_kg_per_week"
+                    android:padding="5dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/need3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/you_need"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/toLose2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/need3"
+                    tools:text="1,274 "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text='@{String.valueOf(UserCaloriesInfo.toBurnOne)}'
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/toLose2"
+                    android:text="@string/calories_day_to_lose_1_kg_per_week"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/need4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/you_need"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true" />
+
+
+                <TextView
+                    android:id="@+id/toGain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/need4"
+                    tools:text="1,274 "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text='@{String.valueOf(UserCaloriesInfo.toGainHalf)}'
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/toGain"
+                    android:layout_centerVertical="true"
+                    android:text="@string/calories_day_to_gain_0_5_kg_per_week"
+                    android:padding="5dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/need5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/you_need"
+                    android:padding="5dp" />
+
+
+                <TextView
+                    android:id="@+id/toGain2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/need5"
+                    tools:text="1,274 "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text='@{String.valueOf(UserCaloriesInfo.toGainOne)}'
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/toGain2"
+                    android:text="@string/calories_day_to_gain_1_kg_per_week"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

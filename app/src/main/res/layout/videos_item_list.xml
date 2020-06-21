@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="videoItem"
+            type="com.example.fit.model.Video" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/MyCard"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        style="@style/card_item">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/VideoImage"
+                tools:layout_height="200dp"
+                android:transitionName="VideoImage"
+                android:contentDescription="@string/video_image"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                tools:text="Video Title"
+                android:gravity="center"
+                style="@style/title"
+                android:textSize="@dimen/ListTitleSize"
+                android:id="@+id/TextViewTitle"
+                android:transitionName="VideoTitle"
+                android:textColor="@android:color/white"
+                android:background="@color/Grey_tran"
+                android:layout_gravity="bottom"
+                android:text="@{videoItem.videoTitle}"/>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

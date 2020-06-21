@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="Video"
+            type="com.example.fit.model.Video" />
+    </data>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/VideoPlayerDim"
+                android:transitionName="VideoImg"
+                android:id="@+id/youTubePlayerView"
+                android:layout_weight="1" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="5dp"
+                        tools:text="Title"
+                        style="@style/title"
+                        android:textSize="20sp"
+                        android:transitionName="VideoTitle"
+                        android:textColor="@android:color/black"
+                        android:text="@{Video.videoTitle}" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:padding="5dp"
+                        tools:text="Video Des"
+                        android:textSize="18sp"
+                        style="@style/body_detail"
+                        android:text="@{Video.videoDes}" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+</layout>
+
+

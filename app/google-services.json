@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "52076608738",
+    "firebase_url": "https://fit-app-11ab1.firebaseio.com",
+    "project_id": "fit-app-11ab1",
+    "storage_bucket": "fit-app-11ab1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52076608738:android:22acd40a074801c50872bb",
+        "android_client_info": {
+          "package_name": "com.example.fit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52076608738-n48njpupe63ace5708rh2bplb9ggia2o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fit",
+            "certificate_hash": "7c2253b4b1f33751367a76bd5a9b4d735ec8b8d6"
+          }
+        },
+        {
+          "client_id": "52076608738-chrqt3h5pseql1scf0mn0s63h9a8q2dq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPifJl0GSJvlDDDp7ezNEOIuHYJxo6n5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52076608738-chrqt3h5pseql1scf0mn0s63h9a8q2dq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

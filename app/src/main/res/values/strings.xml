@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Fit</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="setting">Setting</string>
+    <string name="calculate_calories">Calculate Calories</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="video_image">Video Image</string>
+    <string name="Api_Key">AIzaSyD33rQ683C5CccXwdUYOItivmK7OLTRTbs</string>
+
+    <string name="GENDER">GENDER</string>
+    <string name="GenderSettingTitle">Select Gender</string>
+    <string name="MALE">Male</string>
+    <string name="FEMALE">Female</string>
+    <string name="MaleWorkOutVideosPath">workout_videos</string>
+    <string name="FemaleWorkoutVideosPath">workout_videos_female</string>
+
+    <string name="SettingTitle">Setting</string>
+    <string name="YourAge">Your Age</string>
+    <string name="your_weight">Your Weight</string>
+    <string name="your_height">Your Height</string>
+    <string name="AgeError">Enter Your Age</string>
+    <string name="HeightError">Enter Your Height</string>
+    <string name="WeightError">Enter Your Weight</string>
+    <string name="calculate">Calculate</string>
+    <string name="calories_day_to_maintain_your_weight">Calories/day to maintain your weight.</string>
+    <string name="calories_day_to_lose_0_5_kg_per_week">Calories/day to lose 0.5 kg per week.</string>
+    <string name="calories_day_to_lose_1_kg_per_week">Calories/day to lose 1 kg per week.</string>
+    <string name="calories_day_to_gain_0_5_kg_per_week">Calories/day to gain 0.5 kg per week.</string>
+    <string name="calories_day_to_gain_1_kg_per_week">Calories/day to gain 1 kg per week.</string>
+    <string name="you_need">You Need</string>
+    <string name="user_name">UserName</string>
+    <string name="password">PassWord</string>
+    <string name="signup">SignUp</string>
+    <string name="email">Email</string>
+    <string name="EnterUsername">Enter UserName</string>
+    <string name="EnterEmail">Enter Email</string>
+    <string name="EnterPassword">Enter PassWord</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="select_your_activity">Select Your Activity</string>
+    <string name="CalculateCaloriesTitle">Calculate Calories</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="log_out">Log out</string>
+    <string-array name="ActivitySpinnerStrings">
+        <item>BMR only</item>
+        <item>Little to no</item>
+        <item>Light exercise (1–3 days per Week)</item>
+        <item>Moderate  exercise (3–5 days per Week)</item>
+        <item>Heavy exercise (6–7 days per Week)</item>
+        <item>Very Heavy exercise</item>
+    </string-array>
+    <string-array name="pref_values">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="pref_options">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+
+    <string name="Banner_Ad_Id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="MOBILE_AD_ID">ca-app-pub-3940256099942544~3347511713</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="@string/GENDER"
+        android:title="@string/GenderSettingTitle"
+        android:entryValues="@array/pref_values"
+        android:entries="@array/pref_options"
+        android:summary="NotSelected"
+        android:icon="@drawable/ic_gender"
+        />
+
+</PreferenceScreen>

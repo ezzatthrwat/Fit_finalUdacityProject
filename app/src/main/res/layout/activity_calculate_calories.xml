@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="UserCaloriesInfo"
+            type="com.example.fit.model.UserDetails_Entry" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".ui.calculate_calories.CalculateCaloriesActivity">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:errorEnabled="true"
+                android:hint="@string/YourAge"
+                app:hintTextColor="@color/colorPrimaryDark"
+                app:hintEnabled="true"
+                android:layout_margin="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:gravity="center_vertical">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/AgeInput"
+                    android:inputType="number"
+                    android:text='@{String.valueOf(UserCaloriesInfo.age)}'/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:errorEnabled="true"
+                android:hint="@string/your_weight"
+                app:hintTextColor="@color/colorPrimaryDark"
+                app:hintEnabled="true"
+                android:layout_margin="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:gravity="center_vertical">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/WeightInput"
+                    android:text='@{String.valueOf(UserCaloriesInfo.weight)}'/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:errorEnabled="true"
+                android:hint="@string/your_height"
+                app:hintTextColor="@color/colorPrimaryDark"
+                app:hintEnabled="true"
+                android:layout_margin="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:gravity="center_vertical">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/HeightInput"
+                    android:text='@{String.valueOf(UserCaloriesInfo.height)}'/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="@string/select_your_activity"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ActivitySpinner" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/calculate"
+                android:textAllCaps="false"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                app:cornerRadius="10dp"
+                android:id="@+id/CalculateCaloriesButton"/>
+
+            <include
+                android:id="@+id/CaloriesDetails"
+                layout="@layout/calories_details_layout" />
+        </LinearLayout>
+    </ScrollView>
+</layout>
